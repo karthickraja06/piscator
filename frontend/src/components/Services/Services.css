@@ -1,0 +1,43 @@
+.service-container{
+    position: relative;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 110%;
+    height: 180px;
+    overflow: hidden;
+    padding: 5px;
+}
+.service-container .left img{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    height: 160px;
+    width: 230px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.service{
+    position: absolute;
+    top: 9%;
+    left: 35%;
+    margin: 10px 20px;
+}
+.description{
+    margin: 10px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-weight: 100;
+    max-width: 50%;
+}
+.check{
+    position: absolute;
+    top: 65%;
+    right: 9%;
+    border-radius: 30px;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

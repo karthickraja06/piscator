@@ -1,0 +1,26 @@
+.home {
+    display: block;
+    width: 100%;
+}
+
+.home .services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 0px 0px 100px 0px;
+}
+
+.home .services .title {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.home .list {
+    position: absolute;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    height: auto;
+}
+  

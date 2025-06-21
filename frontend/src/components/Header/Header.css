@@ -1,0 +1,108 @@
+.header-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    margin: 100px auto;
+}
+
+.header-slider .overlay-text{
+    justify-content: left;
+}
+  
+.slider-track {
+    display: flex;
+    width: 500%;
+    animation: slide 30s linear infinite;
+}
+  
+.slide {
+    flex: 0 0 20%;
+    position: relative;
+    padding: 0 0px;
+}
+  
+.slide img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    display: block;
+}
+
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    pointer-events: none; /* Allows clicking through the overlay */
+}
+
+.overlay_text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    z-index: 900;
+    width: 80%;
+}
+
+.overlay_text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #508C9B;
+}
+
+.overlay_text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    margin-top: 40px;
+}
+
+.overlay_text h4 {
+    font-weight: 40;
+    margin-bottom: 1rem;
+    color: white;
+    padding-left: 30px;
+}
+
+.overlay_text button {
+    position: absolute;
+    top: 112%;
+    right: -1%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: #134B70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+}
+
+.overlay_text button:hover {
+    background-color: #508C9B;
+}
+
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    18%  { transform: translateX(0); }
+    20%  { transform: translateX(-20%); }
+    38%  { transform: translateX(-20%); }
+    40%  { transform: translateX(-40%); }
+    58%  { transform: translateX(-40%); }
+    60%  { transform: translateX(-60%); }
+    78%  { transform: translateX(-60%); }
+    80%  { transform: translateX(-80%); }
+    98%  { transform: translateX(-80%); }
+    100% { transform: translateX(0); }
+}
+
+
